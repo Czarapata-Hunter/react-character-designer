@@ -1,0 +1,8 @@
+header {
+  height: 40px;
+  background-color: rgb(150, 10, 10);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
