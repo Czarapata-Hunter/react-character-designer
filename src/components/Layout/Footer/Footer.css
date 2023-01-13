@@ -1,9 +1,11 @@
-footer {
+.footer {
   height: 40px;
-  background-color: rgb(150, 10, 10);
-  color: black;
+  background-color: rgba(150, 10, 10, 0.534);
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: right;
 }

@@ -2,5 +2,5 @@ import React from 'react';
 import './Header.css';
 
 export default function Header() {
-  return <div>Character Designer</div>;
+  return <div className="header">Character Designer</div>;
 }

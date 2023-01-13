@@ -47,6 +47,10 @@ export default function Editor() {
           <option value="tieflinglegs">Tiefling</option>
         </select>
       </div>
+      <div>
+        <label>Give Your Best Warcry</label>
+        <input name="warcry" type="text" />
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import Editor from '../Editor/Editor.js';
 
 export default function Main() {
   return (
-    <main>
+    <main className="background">
       <Editor className="editor" />
     </main>
   );
