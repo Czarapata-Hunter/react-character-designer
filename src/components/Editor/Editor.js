@@ -1,13 +1,24 @@
 import React from 'react';
 import './Editor.css';
 
-export default function Editor() {
+export default function Editor({ head, setHead, body, setBody, legs, setLegs }) {
+  const headHandler = (e) => {
+    setHead(e.target.value);
+  };
+
+  const bodyHandler = (e) => {
+    setBody(e.target.value);
+  };
+
+  const legsHandler = (e) => {
+    setLegs(e.target.value);
+  };
   return (
     <div>
       <div>
         <h2>Design Your Character</h2>
         <label>Head</label>
-        <select>
+        <select name="head" value={head} onChange={headHandler}>
           <option value="dragonbornhead">Dragonborn</option>
           <option value="dwarfhead">Dwarf</option>
           <option value="elfhead">Elf</option>
@@ -21,7 +32,7 @@ export default function Editor() {
       </div>
       <div>
         <label>Body</label>
-        <select>
+        <select name="body" value={body} onChange={bodyHandler}>
           <option value="dragonbornbody">Dragonborn</option>
           <option value="dwarfbody">Dwarf</option>
           <option value="elfbody">Elf</option>
@@ -35,7 +46,7 @@ export default function Editor() {
       </div>
       <div>
         <label>Legs</label>
-        <select>
+        <select name="legs" value={legs} onChange={legsHandler}>
           <option value="dragonbornlegs">Dragonborn</option>
           <option value="dwarflegs">Dwarf</option>
           <option value="elflegs">Elf</option>
