@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export default function Editor({ head, setHead, body, setBody, legs, setLegs }) {
   const [headCount, setHeadCount] = useState(0);
+  const [bodyCount, setBodyCount] = useState(0);
 
   const headHandler = (e) => {
     setHead(e.target.value);
@@ -15,6 +16,9 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
 
   const bodyHandler = (e) => {
     setBody(e.target.value);
+    setBodyCount((currentState) => {
+      return currentState + 1;
+    });
   };
 
   const legsHandler = (e) => {
@@ -67,7 +71,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
         </select>
       </div>
       <div>
-        <Tracker headCount={headCount} />
+        <Tracker headCount={headCount} bodyCount={bodyCount} />
       </div>
       <div>
         <label>Give Your Best Warcry</label>
