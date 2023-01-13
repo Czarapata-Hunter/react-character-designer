@@ -12,15 +12,17 @@ export default function Main() {
 
   return (
     <main className="background">
-      <Editor
-        className="editor"
-        head={head}
-        setHead={setHead}
-        body={body}
-        setBody={setBody}
-        legs={legs}
-        setLegs={setLegs}
-      />
+      <div>
+        <Editor
+          className="editor"
+          head={head}
+          setHead={setHead}
+          body={body}
+          setBody={setBody}
+          legs={legs}
+          setLegs={setLegs}
+        />
+      </div>
       <Preview className="tracker" head={head} body={body} legs={legs} />
     </main>
   );

@@ -1,9 +1,16 @@
 import React from 'react';
 import './Editor.css';
+import Tracker from '../Tracker/Tracker.js';
+import { useState } from 'react';
 
 export default function Editor({ head, setHead, body, setBody, legs, setLegs }) {
+  const [headCount, setHeadCount] = useState(0);
+
   const headHandler = (e) => {
     setHead(e.target.value);
+    setHeadCount((currentState) => {
+      return currentState + 1;
+    });
   };
 
   const bodyHandler = (e) => {
@@ -13,6 +20,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
   const legsHandler = (e) => {
     setLegs(e.target.value);
   };
+
   return (
     <div>
       <div>
@@ -57,6 +65,9 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
           <option value="humanlegs">Human</option>
           <option value="tieflinglegs">Tiefling</option>
         </select>
+      </div>
+      <div>
+        <Tracker headCount={headCount} />
       </div>
       <div>
         <label>Give Your Best Warcry</label>
