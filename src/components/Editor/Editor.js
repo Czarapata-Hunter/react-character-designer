@@ -37,8 +37,8 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
   };
 
   return (
-    <div>
-      <div>
+    <div className="page">
+      <div className="head">
         <h2>Design Your Character</h2>
         <label>Head</label>
         <select name="head" value={head} onChange={headHandler}>
@@ -53,7 +53,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
           <option value="tieflinghead">Tiefling</option>
         </select>
       </div>
-      <div>
+      <div className="body">
         <label>Body</label>
         <select name="body" value={body} onChange={bodyHandler}>
           <option value="dragonbornbody">Dragonborn</option>
@@ -67,7 +67,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
           <option value="tieflingbody">Tiefling</option>
         </select>
       </div>
-      <div>
+      <div className="legs">
         <label>Legs</label>
         <select name="legs" value={legs} onChange={legsHandler}>
           <option value="dragonbornlegs">Dragonborn</option>

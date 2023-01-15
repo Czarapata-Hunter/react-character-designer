@@ -1,0 +1,94 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(150, 10, 10, 0.534);
+
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 25vw;
+
+  border-radius: 20px;
+  border-color: black;
+  border-width: 3px;
+  border-style: dashed;
+}
+
+.head label {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+
+  margin-top: 20px;
+}
+
+.body label {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+
+  margin-top: 20px;
+}
+
+.legs label {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.legs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+
+  margin-top: 20px;
+}

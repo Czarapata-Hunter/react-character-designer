@@ -11,7 +11,7 @@ export default function Main() {
   const [legs, setLegs] = useState('dragonbornlegs');
 
   return (
-    <main className="background">
+    <main className="main">
       <div>
         <Editor
           className="editor"
