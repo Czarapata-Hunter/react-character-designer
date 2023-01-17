@@ -32,7 +32,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
   };
 
   const warcriesHandler = () => {
-    setWarcries((currentState) => [...currentState, inputValue]);
+    inputValue && setWarcries((currentState) => [...currentState, inputValue]);
     setInputValue('');
   };
 
@@ -89,7 +89,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs }) 
           // warcries={warcries}
         />
       </div>
-      <div>
+      <div className="warcries">
         <label>Give Your Best Warcry</label>
         <input
           name="warcry"

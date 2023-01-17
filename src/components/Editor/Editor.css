@@ -92,3 +92,52 @@
 
   margin-top: 20px;
 }
+
+.page select option {
+  background-color: grey;
+}
+
+.page select {
+  height: 40px;
+  width: auto;
+
+  background-color: grey;
+  border-radius: 15px;
+
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.warcries {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.warcries input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.warcries button {
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.warcries button:hover {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  scale: 1.1;
+}
+
+.warcries label {
+  font-size: 25px;
+}
